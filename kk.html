@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Basics Of Machine Learning | Harshitag.com</title>
+    <link rel="stylesheet" href="kk1.css">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="kk1.css">
+    
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="C:\\Users\\HARSHITA GUPTA\\Pictures\\opencv-master\\samples\\data\\ml.png" alt="Harshitag.com">
+        </div>
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#documentation">Documentation</a></li>
+            <li class="item"><a href="#projects">Projects</a></li>
+            <li class="item"><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    
+    <section id="home">
+        <h1 class="h-primary">Welcome to Machine Learning.</h1>
+        <p>The core idea of Machine Learning model is that you gather a lot of input data and supply the correct result. </p>
+        <p>This way, when it analyzis more and more data during training, it will figure out the relationship between the input and the result. </p>
+        <button class="btn">For More info.</button>
+    </section>
+
+    <section id="documentation">
+        <h1 class="h-primary center">Documentation</h1>
+        <div id="documentation">
+            <div class="box">
+                
+                <h2 class="h-secondary center">Training a model</h2>
+                <p class="center">We will learn a simple model in python using Scikit learn. Remember to install it using:
+                    "pip install scikit-learn"
+                </p>
+            </div>
+
+            <div class="box">
+                <h2 class="h-secondary center">Generate the training set.</h2>
+                <p class="center">from random import randit<br>train_set_limit=1000<br> train_set_count=100<br> train_input=list() <br> train_output=list() <br> for num in range(train_set_count): <br>
+
+                X1=randit(0,train_set_limit)<br> X2=randit(0,train_set_limit)<br> X3= randit(0,train_set_limit)<br> eq=x1+ (2*x2) +(3*X3) <br> train_input.append([X1,X2,X3]) <br> train_output.append(eq)
+
+
+                </p>
+            </div>
+
+            <div class="box">
+                <h2 class="h-secondary center">Model representation</h2>
+                <img src= "C:\\Users\\HARSHITA GUPTA\\Pictures\\MLP.png">
+                <p class="center"> We will training a linear regression model. It's starightforward.</p>
+            </div>
+
+            <div class ="box">
+                <h2 class ="h-secondary center"> Create the model and pass the data.</h2>
+                <p class="centre"> from sklearn.linear_model import LinearRegression <br> predictor= LinearRegression(n_jobs=-1)<br> predictor.fit(X=train_input,Y=train_output)</p>
+            </div>
+            
+            <div class ="box">
+                <h2 class ="h-secondary center"> OUR TEST DATA IS AS FOLLOWS.</h2>
+                <p class="centre"> X_test=[[10,20,30]]<br> The result should be: 10+(20*2) +(30*3)=140 <br>
+                     result=predict(X=X_test) <br> 
+                     coeficients=predict <br>
+                      print("result")<br>
+                       OUTPUT <br> 
+                       result: [140]</p>
+            </div>
+
+            <section id="projects">
+                <h1 class="h-primary center">Projects:</h1>
+                    <div id="projects">
+                    <div class="box">
+                        <ul>
+                            <li class="item"> Sales Forecasting using Walmart Dataset</li>
+                            <li class="item">BigMart Sales Prediction </li>
+                            <li class="item">Music Recomendation System Project</li>
+                            <li class="item">Human Activity Recognization using smartphone Dataset</li>
+                            <li class="item">Stock Prices Predictor using TimeSeries</li>
+                            <li class="item">Diabeties Prediction</li>
+                            <li class="item">Predicting Wine Quality using Wine Quality Dataset</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="contact">
+                <h1 class="h-primary center">Contact Us</h1>
+                <div id="contact-box">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="name">Name: </label>
+                            <input type="text" name="name" id="name" placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email: </label>
+                            <input type="email" name="name" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number: </label>
+                            <input type="phone" name="name" id="phone" placeholder="Enter your phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message: </label>
+                            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        
+            <footer>
+                <div class="center">
+                    Copyright &copy; www.basicsOfMachineLearning.com. All rights reserved!
+                </div>
+            </footer>
+
+
